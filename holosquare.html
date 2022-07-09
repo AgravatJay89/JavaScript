@@ -7,11 +7,11 @@
 </head>
 <body>
 	<script type="text/javascript">
-		
-	for (a=1;a<=5;a++)
+	n=parseInt(prompt("enter number:"));	
+	for (i=1;i<n;i++)
 	{
-		for (b=1;b<=5;b++)	{
-			if (a==1||a==5||b==1||b==5) {
+		for (j=1;j<n;j++)	{
+			if (i==1||i==n-1||j==1||j==n-1) {
 				document.write("*");
 			}
 			else

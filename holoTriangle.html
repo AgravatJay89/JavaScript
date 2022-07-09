@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>holoTriangle</title>
+</head>
+<body>
+<script type="text/javascript">
+/*
+	let n = 5;
+let string = "";
+
+// External loop
+for (let i = 1; i <= n; i++) {
+  // printing spaces
+  for (let j = 1; j <= n - i; j++) {
+    string += " ";
+  }
+  // printing star
+  for (let k = 0; k < 2 * i - 1; k++) {
+    if(i === 1 || i === n) {
+      string += "*";
+    }
+    else {
+      if(k === 0 || k === 2 * i - 2) {
+        string += "*";
+      }
+      else {
+        string += " ";
+      }
+    }
+  }
+  string += "\n";
+}
+document.write(string);*/
+n = parseInt(prompt("Enter number of rows of pattern : "));
+		//pattern-4 Hollow Pyramid Triangle
+		for(i=1;i<=n;i++){
+			for(k=n;k>=i;k--){
+				document.write("&nbsp&nbsp&nbsp")
+			}
+			for(j=1;j<=2*i-1;j++){
+				if(j==1 || j==2*i-1 ||i==1|| i==n)
+					document.write("* ");
+				else
+					document.write("&nbsp&nbsp&nbsp")
+			}
+
+
+			
+			document.write("<br/>");
+		}
+
+
+</script>
+</body>
+</html>
